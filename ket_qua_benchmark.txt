@@ -1,0 +1,116 @@
+=================================================================
+KẾT QUẢ ĐÁNH GIÁ TRUY XUẤT (BENCHMARK RESULTS) — LAB 07 (K4-L3A)
+Chủ đề: Dịch vụ & Quy định Đại học
+=================================================================
+
+
+### CHIẾN LƯỢC: HeadingChunker (Section-based, max=400) (Tổng số chunks: 27) - Điểm: 0/10
+Câu 1: Thời hạn mượn sách thư viện tối đa và số lượng sách được mượn là bao nhiêu?
+  - Filter: {'audience': 'student'}
+  - Top-1: dormitory-regulations (score=0.1709)
+  - Có Gold trong Top-3: False (Chứa nội dung đáp án: False)
+  - Điểm câu: 0/2
+  - Top-1 Preview: ## Điều 3. Quản lý khách thăm và An ninh trật tự Khách đến thăm sinh viên phải xuất trình giấy tờ tù
+
+Câu 2: Sinh viên cần đạt điều kiện gì về GPA và điểm rèn luyện để được nhận học bổng khuyến khích học tập mức Xuất sắc?
+  - Filter: None
+  - Top-1: dormitory-regulations (score=0.1949)
+  - Có Gold trong Top-3: False (Chứa nội dung đáp án: False)
+  - Điểm câu: 0/2
+  - Top-1 Preview: ## Điều 3. Quản lý khách thăm và An ninh trật tự Khách đến thăm sinh viên phải xuất trình giấy tờ tù
+
+Câu 3: Sinh viên có điểm GPA từ bao nhiêu thì được phép đăng ký vượt tải tối đa 26 tín chỉ trong một học kỳ?
+  - Filter: None
+  - Top-1: exam-appeal-procedure (score=0.1927)
+  - Có Gold trong Top-3: False (Chứa nội dung đáp án: False)
+  - Điểm câu: 0/2
+  - Top-1 Preview: # Quy trình Tiếp nhận và Xử lý Đơn Phúc khảo bài thi
+
+Câu 4: Thời hạn nộp đơn phúc khảo bài thi kết thúc học phần là bao lâu và lệ phí phúc khảo là bao nhiêu?
+  - Filter: None
+  - Top-1: course-registration (score=0.1065)
+  - Có Gold trong Top-3: False (Chứa nội dung đáp án: False)
+  - Điểm câu: 0/2
+  - Top-1 Preview: ## Điều 1. Thời gian và Cổng đăng ký Sinh viên đại học chính quy thực hiện đăng ký học phần trực tuy
+
+Câu 5: Giờ giới nghiêm của ký túc xá là mấy giờ và những thiết bị sinh nhiệt nào bị nghiêm cấm trong phòng ở?
+  - Filter: None
+  - Top-1: scholarship-policy (score=0.2395)
+  - Có Gold trong Top-3: False (Chứa nội dung đáp án: False)
+  - Điểm câu: 0/2
+  - Top-1 Preview: ## Điều 3. Quy trình xét chọn và Trao học bổng Hội đồng thi đua khen thưởng nhà trường lập danh sách
+
+
+### CHIẾN LƯỢC: FixedSizeChunker (size=300, overlap=50) (Tổng số chunks: 28) - Điểm: 3/10
+Câu 1: Thời hạn mượn sách thư viện tối đa và số lượng sách được mượn là bao nhiêu?
+  - Filter: {'audience': 'student'}
+  - Top-1: dormitory-regulations (score=0.2352)
+  - Có Gold trong Top-3: True (Chứa nội dung đáp án: False)
+  - Điểm câu: 1/2
+  - Top-1 Preview:  sử dụng các thiết bị sinh nhiệt công suất lớn vượt quá 1000W. Sinh viên có trách nhiệm giữ gìn vệ s
+
+Câu 2: Sinh viên cần đạt điều kiện gì về GPA và điểm rèn luyện để được nhận học bổng khuyến khích học tập mức Xuất sắc?
+  - Filter: None
+  - Top-1: exam-appeal-procedure (score=0.1770)
+  - Có Gold trong Top-3: True (Chứa nội dung đáp án: False)
+  - Điểm câu: 1/2
+  - Top-1 Preview: ơn phúc khảo là 07 ngày làm việc kể từ ngày phòng Khảo thí công bố điểm thi chính thức trên cổng thô
+
+Câu 3: Sinh viên có điểm GPA từ bao nhiêu thì được phép đăng ký vượt tải tối đa 26 tín chỉ trong một học kỳ?
+  - Filter: None
+  - Top-1: scholarship-policy (score=0.1969)
+  - Có Gold trong Top-3: False (Chứa nội dung đáp án: False)
+  - Điểm câu: 0/2
+  - Top-1 Preview: m trung bình học kỳ GPA đạt từ 3.60 trở lên và điểm rèn luyện đạt từ 90 điểm trở lên. 2. Mức Giỏi (7
+
+Câu 4: Thời hạn nộp đơn phúc khảo bài thi kết thúc học phần là bao lâu và lệ phí phúc khảo là bao nhiêu?
+  - Filter: None
+  - Top-1: scholarship-policy (score=0.2427)
+  - Có Gold trong Top-3: False (Chứa nội dung đáp án: False)
+  - Điểm câu: 0/2
+  - Top-1 Preview: # Quy chế Xét cấp Học bổng Khuyến khích học tập  ## Điều 1. Đối tượng và Tiêu chí chung Học bổng khu
+
+Câu 5: Giờ giới nghiêm của ký túc xá là mấy giờ và những thiết bị sinh nhiệt nào bị nghiêm cấm trong phòng ở?
+  - Filter: None
+  - Top-1: scholarship-policy (score=0.2503)
+  - Có Gold trong Top-3: True (Chứa nội dung đáp án: True)
+  - Điểm câu: 1/2
+  - Top-1 Preview: m trung bình học kỳ GPA đạt từ 3.60 trở lên và điểm rèn luyện đạt từ 90 điểm trở lên. 2. Mức Giỏi (7
+
+
+### CHIẾN LƯỢC: RecursiveChunker (chunk_size=300) (Tổng số chunks: 36) - Điểm: 0/10
+Câu 1: Thời hạn mượn sách thư viện tối đa và số lượng sách được mượn là bao nhiêu?
+  - Filter: {'audience': 'student'}
+  - Top-1: scholarship-policy (score=0.1190)
+  - Có Gold trong Top-3: False (Chứa nội dung đáp án: False)
+  - Điểm câu: 0/2
+  - Top-1 Preview: 2. Mức Giỏi (75% học phí học kỳ): Điểm trung bình học kỳ GPA đạt từ 3.20 đến 3.59 và điểm rèn luyện 
+
+Câu 2: Sinh viên cần đạt điều kiện gì về GPA và điểm rèn luyện để được nhận học bổng khuyến khích học tập mức Xuất sắc?
+  - Filter: None
+  - Top-1: library-faculty (score=0.4255)
+  - Có Gold trong Top-3: False (Chứa nội dung đáp án: False)
+  - Điểm câu: 0/2
+  - Top-1 Preview: ## Điều 1. Quyền lợi và Hạn mức mượn tài liệu Giảng viên cơ hữu và nghiên cứu viên của trường được h
+
+Câu 3: Sinh viên có điểm GPA từ bao nhiêu thì được phép đăng ký vượt tải tối đa 26 tín chỉ trong một học kỳ?
+  - Filter: None
+  - Top-1: dormitory-regulations (score=0.4416)
+  - Có Gold trong Top-3: False (Chứa nội dung đáp án: False)
+  - Điểm câu: 0/2
+  - Top-1 Preview: Mọi hành vi gây rối trật tự, đánh bạc, sử dụng chất kích thích sẽ bị chấm dứt hợp đồng thuê phòng ng
+
+Câu 4: Thời hạn nộp đơn phúc khảo bài thi kết thúc học phần là bao lâu và lệ phí phúc khảo là bao nhiêu?
+  - Filter: None
+  - Top-1: dormitory-regulations (score=0.2345)
+  - Có Gold trong Top-3: False (Chứa nội dung đáp án: False)
+  - Điểm câu: 0/2
+  - Top-1 Preview: Ký túc xá mở cửa từ 05h30 sáng và đóng cổng vào lúc 23h00 hàng ngày. Sinh viên nội trú ra vào ký túc
+
+Câu 5: Giờ giới nghiêm của ký túc xá là mấy giờ và những thiết bị sinh nhiệt nào bị nghiêm cấm trong phòng ở?
+  - Filter: None
+  - Top-1: exam-appeal-procedure (score=0.2517)
+  - Có Gold trong Top-3: False (Chứa nội dung đáp án: False)
+  - Điểm câu: 0/2
+  - Top-1 Preview: Đơn nộp sau thời hạn trên sẽ không được giải quyết.  ## Điều 2. Lệ phí và Quy trình chấm phúc khảo
+
